@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body class="bg-slate-100 font-sans">
+
+    <div class="container max-w-5xl mx-auto my-10 p-8 bg-white rounded-xl shadow-lg">
+        <!-- Header Section -->
+        <header class="text-center mb-8">
+            <h1 class="text-3xl font-bold text-gray-800">User Segmentation Analyzer</h1>
+            <p class="text-gray-500 mt-2">Categorize and analyze your community members.</p>
+        </header>
+
+        <!-- Filter Buttons Section -->
+        <div id="filters" class="flex justify-center flex-wrap gap-3 mb-8">
+            <!-- Filter buttons are dynamically inserted here by JavaScript -->
+        </div>
+
+        <!-- Users Table Section -->
+        <div class="overflow-x-auto">
+            <table class="min-w-full text-left text-sm">
+                <thead class="bg-slate-50">
+                    <tr>
+                        <th class="p-4 font-semibold text-slate-700">Name</th>
+                        <th class="p-4 font-semibold text-slate-700">Segment</th>
+                        <th class="p-4 font-semibold text-slate-700">Messages</th>
+                        <th class="p-4 font-semibold text-slate-700">Last Seen (Days Ago)</th>
+                    </tr>
+                </thead>
+                <tbody id="users-table-body" class="divide-y divide-slate-200">
+                    <!-- User data rows are dynamically inserted here by JavaScript -->
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <!-- This links to your frontend JavaScript logic -->
+    <script src="script.js" type="module"></script>
+
+</body>
+</html>
